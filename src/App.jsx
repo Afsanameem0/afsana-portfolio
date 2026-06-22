@@ -114,8 +114,8 @@ const data = {
     {
       degree: "B.Sc. in Computer Science & Engineering",
       school: "BRAC University",
-      grade: "CGPA: 3.01",
-      year: "2026",
+      grade: "CGPA: 2.98",
+      year: "2026 (Awaiting Thesis Defense)",
     },
     {
       degree: "HSC in Science",
