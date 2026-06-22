@@ -33,14 +33,8 @@ const data = {
   Research: [
     {
       title: "A Gated Multimodal Mixture of Experts with Three-Layer Analysis for Dementia Detection and MMSE Severity Staging from Spontaneous Speech.",
-      subtitle: `This thesis presents a Gated
-                Multimodal Mixture-of-Experts (MoE)
-                architecture for dementia detection and MMSE
-                severity staging from spontaneous speech,
-                fusing linguistic features, DistilBERT, MFCC
-                acoustics, and wav2vec 2.0. Evaluated on the
-                DementiaBank Pitt corpus.`,
-      stack: ["Python, PyTorch, DistilBERT, wav2vec 2.0, MFCC, Gated Mixture-of-Experts (MoE)"],
+      subtitle: "This thesis presents a Gated Multimodal Mixture-of-Experts (MoE) architecture for dementia detection and MMSE severity staging from spontaneous speech,fusing linguistic features, DistilBERT, MFCC acoustics, and wav2vec 2.0. Evaluated on the DementiaBank Pitt corpus.",
+      stack: ["Python, PyTorch, DistilBERT, wav2vec 2.0, MFCC, Gated Mixture-of-Experts(MoE)"],
       period: "Jan 2025 – June 2026",
       icon: "🔬",
     },
@@ -114,8 +108,8 @@ const data = {
     {
       degree: "B.Sc. in Computer Science & Engineering",
       school: "BRAC University",
-      grade: "CGPA: 2.98",
-      year: "2026 (Awaiting Thesis Defense)",
+      grade: "CGPA: 3.01",
+      year: "2026",
     },
     {
       degree: "HSC in Science",
@@ -159,7 +153,7 @@ const data = {
   ],
 };
 
-const NAV = ["About", "Skills", "Projects", "Education", "Contact"];
+const NAV = ["About", "Skills", "Projects", "Research", "Education", "Contact"];
 
 const ROLES = [
   "Full-Stack Developer",
@@ -489,6 +483,45 @@ export default function App() {
                 </ul>
                 <div className="flex flex-wrap gap-2 mt-auto pt-2 border-t border-white/5">
                   {p.stack.map((t) => (
+                    <span
+                      key={t}
+                      className="bg-sky-500/10 text-sky-300 text-xs px-2.5 py-1 rounded-full"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Research ── */}
+      <section id="Research" className="py-24 bg-[#04091a]">
+        <div className="max-w-6xl mx-auto px-6">
+          <SectionHeader label="Thesis Work" title="Research" />
+          <div className="mt-12 space-y-4">
+            {data.Research.map((item, i) => (
+              <div
+                key={i}
+                className="card-jump bg-white/[0.03] border border-white/8 rounded-2xl p-6 flex flex-col gap-4"
+                style={{ animationDelay: `${i * 0.1}s` }}
+              >
+                <div className="flex items-start gap-4">
+                  <span className="text-3xl">{item.icon}</span>
+                  <div>
+                    <h3 className="font-display font-bold text-white text-lg leading-snug">
+                      {item.title}
+                    </h3>
+                    <p className="text-slate-400 text-sm mt-2 whitespace-pre-line">
+                      {item.subtitle}
+                    </p>
+                    <p className="text-slate-600 text-xs mt-2">{item.period}</p>
+                  </div>
+                </div>
+                <div className="flex flex-wrap gap-2 pt-2 border-t border-white/5">
+                  {item.stack.map((t) => (
                     <span
                       key={t}
                       className="bg-sky-500/10 text-sky-300 text-xs px-2.5 py-1 rounded-full"
