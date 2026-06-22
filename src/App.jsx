@@ -15,7 +15,7 @@ const data = {
   linkedin: "https://linkedin.com/in/afsana-akter-mim-1a0398374",
   github: "https://github.com/Afsanameem0",
   about:
-    "CSE student at BRAC University with all coursework completed, awaiting thesis defense. I build full-stack web applications with JavaScript, React, Node.js, and MongoDB, and have hands-on experience in machine learning and embedded systems. I love turning ideas into working products.",
+    "I have completed my BSc in Computer Science & Engineering from BRAC University. I build full-stack web applications with JavaScript, React, Node.js, and MongoDB, and have hands-on experience in machine learning and embedded systems. I love turning ideas into working products.",
   skills: {
     Languages: ["JavaScript", "Python", "SQL", "C++"],
     Frontend: ["React.js", "HTML", "CSS", "Tailwind CSS"],
@@ -99,8 +99,8 @@ const data = {
     {
       degree: "B.Sc. in Computer Science & Engineering",
       school: "BRAC University",
-      grade: "CGPA: 2.98",
-      year: "2026 (Awaiting Thesis Defense)",
+      grade: "CGPA: 3.01",
+      year: " June 2026",
     },
     {
       degree: "HSC in Science",
